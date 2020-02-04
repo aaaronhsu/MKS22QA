@@ -1,6 +1,9 @@
 # classwork
 def isLeapYear(year):
-    if year % 4 == 0 and (year % 100) != 0:
+    if year % 400 == 0:
+        print("leap year")
+        return True
+    elif year % 4 == 0 and (year % 100) != 0:
         print("leap year")
         return True
     else:
@@ -24,3 +27,5 @@ def daysInMonth(month, year):
                 print(30)
             else:
                 print(31)
+
+isLeapYear(2104)
