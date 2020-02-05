@@ -1,1 +1,5 @@
-print(2 ** 2 ** 3)
+from math import *
+
+# homework
+def AreaPipe(a, t, L):
+    return t * (AreaCircle(a) - AreaCircle(a - t))
