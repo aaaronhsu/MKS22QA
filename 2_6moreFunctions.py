@@ -1,3 +1,28 @@
+from math import *
+
+# classwork
+def distance1(x1, y1, x2, y2):
+    return sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+
+def quadrant(x, y):
+    if(x == 0 and y == 0):
+        return "origin"
+    elif(x == 0):
+        return "on x-axis"
+    elif(y == 0):
+        return "on y-axis"
+    else:
+        if(x > 0):
+            if(y > 0):
+                return "quadrant 1"
+            else:
+                return "quadrant 4"
+        else:
+            if(y > 0):
+                return "quadrant 2"
+            else:
+                return "quadrant 3"
+
 # homework
 def totalDuration(h1, m1, s1, h2, m2, s2):
     s3 = (s1 + s2) % 60
