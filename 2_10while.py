@@ -1,5 +1,27 @@
 import random
 
+# classwork
+def squareit(x):
+    if x <= 8:
+        print(x ** 2)
+        squareit(x + 1)
+
+def num():
+    i = -1
+    while i <= 5:
+        i += 1
+        if i == 3 or i == 6:
+            continue
+        print(i)
+
+# homework
+def guess():
+    guess = int(input("Guess number: "))
+    while(guess != random.randint(1, 9)):
+        print("You guessed wrong")
+        guess = int(input("Guess again: "))
+    print("Your guess was correct")
+
 # challenge
 def password():
     p = input("Enter password: ")
