@@ -45,7 +45,7 @@ def password():
         if 48 <= ord(c) <= 57:
             number = True
 
-    if(lower and upper and special):
+    if(lower and upper and special and number):
         print("valid password")
     else:
         print("bad password")
