@@ -29,6 +29,7 @@ def password():
     lower = False
     upper = False
     special = False
+    number = False
 
     if ln < 6 or ln > 16:
         print("bad password")
@@ -39,8 +40,10 @@ def password():
             lower = True
         if 65 <= ord(c) <= 90:
             upper = True
-        if ord(c) == 35 or ord(c) == 36 or ord(c) == 44:
+        if ord(c) == 35 or ord(c) == 36 or ord(c) == 64:
             special = True
+        if 48 <= ord(c) <= 57:
+            number = True
 
     if(lower and upper and special):
         print("valid password")
