@@ -1,4 +1,10 @@
-a = "hello"
+i = 0
 
-for c in a:
-    print(c)
+while i < 10:
+    print(i)
+    i += 1
+
+    if(i == 6):
+        break
+else:
+    print("ended")
