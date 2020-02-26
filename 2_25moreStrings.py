@@ -22,7 +22,7 @@ def count(s):
 
 # homework
 def index(s, c):
-    for i in range(0, len(s)):
+    for i in range(len(s)):
         if(s[i] == c):
             print("Current character", s[i], "position at", i)
 
