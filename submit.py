@@ -1,29 +1,15 @@
-# homework
-def removeSpace(s):
-    return s.replace(" ", "")
+# classwork
+def toUpper(s):
+    return s.upper()
 
-def capitalize(s):
-    build = ""
-    space = True
-    for i in range(len(s)):
-        if space:
-            build += s[i].upper()
-            space = False
-        elif s[i] == " ":
-            build += " "
-            space = True
-        else:
-            build += s[i]
 
-    return build
-
-# challenge
-def switch(s):
-    build = ""
-    for i in range(len(s)):
+def testUpper(s):
+    numUpper = 0
+    for i in range(0, 4):
         if s[i].isupper():
-            build += s[i].lower()
-        else:
-            build += s[i].upper()
+            numUpper += 1
 
-    return build
+    if numUpper >= 2:
+        return s.upper()
+    else:
+        return s

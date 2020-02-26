@@ -6,14 +6,15 @@ def toUpper(s):
 def testUpper(s):
     numUpper = 0
     for i in range(0, 4):
-        if s[i].isUpper():
+        if s[i].isupper():
             numUpper += 1
 
-    if sumUpper >= 2:
+    if numUpper >= 2:
         return s.upper()
     else:
         return s
 
+print(testUpper("asdfsadfds"))
 # homework
 def removeSpace(s):
     return s.replace(" ", "")

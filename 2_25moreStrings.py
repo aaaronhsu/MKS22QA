@@ -34,7 +34,6 @@ def replace(s):
     if n == -1 or p == -1:
         return s
 
-    ans = ""
     n += 3
 
     return s[:p] + "good" + s[n:]
