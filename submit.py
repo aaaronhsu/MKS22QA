@@ -1,6 +1,6 @@
 # classwork
 def toUpper(s):
-    return s.upper()
+    return s.upper(), s.lower()
 
 
 def testUpper(s):

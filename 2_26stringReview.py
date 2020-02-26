@@ -1,6 +1,6 @@
 # classwork
 def toUpper(s):
-    return s.upper()
+    return s.upper(), s.lower()
 
 
 def testUpper(s):
@@ -14,7 +14,6 @@ def testUpper(s):
     else:
         return s
 
-print(testUpper("asdfsadfds"))
 # homework
 def removeSpace(s):
     return s.replace(" ", "")
