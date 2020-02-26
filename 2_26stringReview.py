@@ -1,3 +1,19 @@
+# classwork
+def toUpper(s):
+    return s.upper()
+
+
+def testUpper(s):
+    numUpper = 0
+    for i in range(0, 4):
+        if s[i].isUpper():
+            numUpper += 1
+
+    if sumUpper >= 2:
+        return s.upper()
+    else:
+        return s
+
 # homework
 def removeSpace(s):
     return s.replace(" ", "")
