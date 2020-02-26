@@ -3,7 +3,7 @@ def removeSpace(s):
     return s.replace(" ", "")
 
 def capitalize(s):
-    build = "He"
+    build = ""
     space = True
     for i in range(len(s) - 1):
         if space:
