@@ -3,7 +3,7 @@ def removeSpace(s):
     return s.replace(" ", "")
 
 def capitalize(s):
-    build = ""
+    build = "He"
     space = True
     for i in range(len(s) - 1):
         if space:
@@ -19,8 +19,6 @@ def capitalize(s):
 
     build += s[len(s) - 1].upper()
     return build
-
-print(capitalize("hello this dog is fat"))
 
 # challenge
 def switch(s):
