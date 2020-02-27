@@ -21,7 +21,12 @@ def removeSpace(s):
 def capitalize(s):
     build = ""
     space = True
-    for i in range(len(s) - 1):
+    shift = 0
+    if s[0] == " ":
+        shift = 1
+        build += " "
+
+    for i in range(shift, len(s) - 1):
         if space:
             build += s[i].upper()
             space = False
@@ -36,7 +41,7 @@ def capitalize(s):
     build += s[len(s) - 1].upper()
     return build
 
-print(capitalize("hello this dog is fat"))
+print(capitalize(" hello this dog is fat"))
 
 # challenge
 def switch(s):
