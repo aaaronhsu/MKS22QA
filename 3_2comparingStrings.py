@@ -19,7 +19,7 @@ def alph(a, b, c):
 
 # homework
 def find(s, f):
-    if s.find(f) == 0:
+    if s.find(f) == -1:
         return "Not Found"
     else:
         return s.find(f)
