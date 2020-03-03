@@ -1,12 +1,4 @@
-# homework
-def find(s, f):
-    if s.find(f) == 0:
-        return "Not Found"
-    else:
-        return s.find(f)
-
-print(find("hello", "ll"))
-# challenge
+# classwork
 def wrap(s, w):
     counter = 0
     holder = ""
@@ -21,3 +13,6 @@ def wrap(s, w):
             counter = 1
 
     print(holder)
+
+def space(s):
+    return " " * s.count(" ") + s.replace(" ", "")
