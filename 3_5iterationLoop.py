@@ -12,13 +12,9 @@ def multi(s):
 
 def removeDuplicate(s):
     build = ""
-    last = ""
     for i in s:
-        if last == i:
-            build = build[0: len(build) - 1]
-        else:
+        if build[-1:] != i:
             build += i
-        last = i
 
     return build
 
