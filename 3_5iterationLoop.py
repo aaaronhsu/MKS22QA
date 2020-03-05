@@ -1,3 +1,27 @@
+# classwork
+def multi(s):
+    single = ""
+    multi = ""
+    for i in s:
+        if s.count(i) > 1 and multi.count(i) == 0:
+            multi += i
+        else:
+            single += i
+
+    return single, multi
+
+def removeDuplicate(s):
+    build = ""
+    last = ""
+    for i in s:
+        if last == i:
+            build = build[0: len(build) - 1]
+        else:
+            build += i
+        last = i
+
+    return build
+
 # homework
 def window(str, sub):
     ans = str

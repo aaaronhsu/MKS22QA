@@ -31,18 +31,15 @@ def multi(s):
     return single, multi
 
 # challenge
-def sub(a, b):
-    if len(a) >= len(b):
-        return helper(a + " ", " " + b)
-    else:
-        return helper(b + " ", " " + a)
+def sub(str1, str2):
+    holder = ""
+    for i in range(len(str1)):
+        for a in range(i + 1, len(str1) + 1):
+            if str2.count(str1[i:a]) > 0:
+                if len(str1[i:a]) > len(holder):
+                    holder = str1[i:a]
 
-def helper(a, b):
-    for i in range(len(a) - 1, -1, -1):
-        for c in range(len(a) - i):
-            if b.find(a[c : c + i]) > 0:
-                return a[c : c+i]
-    return "none"
+    return holder
 
 def smallLarge(s):
     small = s
