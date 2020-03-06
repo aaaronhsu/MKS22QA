@@ -29,6 +29,7 @@ def window(str, sub):
             for k in sub:
                 if holder.count(k) == 0:
                     contains = False
+                    break
 
             if contains and len(holder) < len(ans):
                 ans = holder

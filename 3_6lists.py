@@ -1,3 +1,27 @@
+# classwork
+def grades():
+    num = 0
+    grade = 0
+
+    holder = input("Enter Grade: ")
+    while(holder != "done"):
+        num += 1
+        grade += int(holder)
+        holder = input("Enter Grade: ")
+
+    return grade / num
+
+def length(l):
+    return len(l)
+
+def firstFour(l):
+    for i in l[:4]:
+        print(i)
+
+def lastTwo(l):
+    for i in l[-2:]:
+        print(i)
+
 # homework
 def squares():
     ans = []
