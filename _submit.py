@@ -1,33 +1,34 @@
 # homework
-def squares():
+def even(l):
     ans = []
-    holder = []
-    for i in range(1, 31):
-        holder += [i]
-
-    for i in holder[:6]:
-        ans += [i ** 2]
-    for i in holder[25:]:
-        ans += [i ** 2]
-
-    for i in ans:
-        print(i)
+    for i in l:
+        if i % 2 == 0:
+            ans += [i]
+    return ans
 
 # challenge
-def pascal(n):
+def circle(l1, l2):
+    dup = []
+    if len(l1) > len(l2):
+        holder = l1
+        l1 = l2
+        l2 = holder
 
-    if n <= 0:
-        return [1]
-    elif n == 1:
-        return [1, 1]
-    return rec([1, 1], n - 1)
+    for i in range(len(l2)):
+        if l1[0] == l2[i]:
+            dup += [i]
 
-def rec(l, n):
-    if n <= 0:
-        return l
+    holder = []
 
-    holder = [1]
-    for i in range(len(l) - 1):
-        holder += [l[i] + l[i + 1]]
-    holder += [1]
-    return rec(holder, n - 1)
+    for i in dup:
+        holder += [l2[i:] + l2[:i]]
+
+    l1 = (l1 * (int(len(l2) / len(l1)))) + l1[:len(l2) % len(l1)]
+
+    ans = False
+
+    for i in holder:
+        if i == l1:
+            return True
+
+    return False

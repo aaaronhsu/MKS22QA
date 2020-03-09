@@ -39,7 +39,6 @@ def squares():
 
 # challenge
 def pascal(n):
-
     if n <= 0:
         return [1]
     elif n == 1:
