@@ -1,3 +1,25 @@
+ def in():
+    l = []
+    in = input("Enter input, done when done: ")
+    while in != "done":
+        l += [in]
+        in = input("Enter input, done when done: ")
+    return l
+
+# classwork
+def dup(l):
+    for i in range(len(l) - 1, -1, -1):
+        if l.count(l[i]) > 1:
+            l.remove(l[i])
+    return l
+
+def even(l):
+    in = in()
+    for i in range(len(l) - 1, -1, -1):
+        if l[i] % 2 == 0:
+            l.remove(l[i])
+    return l
+
 # homework
 def compare(l1, l2):
     add = []
