@@ -8,9 +8,11 @@
 
 # classwork
 def dup(l):
+    l = l[::-1]
     for i in range(len(l) - 1, -1, -1):
         if l.count(l[i]) > 1:
             l.remove(l[i])
+    l = l[::-1]
     return l
 
 def even(l):
