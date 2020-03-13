@@ -1,14 +1,7 @@
 # classwork
 def ex1(l):
-    a = -100000
-    b = a
-    for i in l:
-        if i > a:
-            print(i)
-            b = a
-            a = i
-
-    return b
+    l.remove(max(l))
+    return max(l)
 
 def ex2(l1, l2):
     common = []
@@ -42,5 +35,3 @@ def challenge(l, n):
         ans += [holder]
         holder = []
     return ans
-
-print(challenge([1, 2, 3, 4, 5, 6], 3))
