@@ -1,6 +1,4 @@
-x = [1, 1, 1, 1, 1, 1, 1]
-for i in x:
-    if x.count(i) > 1:
-        x.remove(i)
-
-print(x)
+a = [1, 2, 3, 4]
+for i in a:
+    print(i)
+    a.remove(i)
