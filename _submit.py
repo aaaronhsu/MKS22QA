@@ -1,6 +1,5 @@
-def asdf(n):
-    if len(n) >= 1 and n[0] == n[-1]:
-        return True
-    return False
 
-print(asdf([1, 2, 3, 1]))
+l = [[1, 2, 3, 4], [2, 1, 3, 4], [4, 2, 3, 1], [2, 3, 4, 1]]
+
+for i in l:
+    print(i)

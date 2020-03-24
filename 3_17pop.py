@@ -14,6 +14,3 @@ def duplicates(l):
 def delete(l, rem):
     l.remove(rem)
     return l
-
-
-print(delete([1, 2, 3, 4]))
