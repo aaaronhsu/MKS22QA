@@ -1,5 +1,5 @@
 
-l = [1, 2, 3, 4]
+aal = [1, 2, 3, 4]
 
 for i in range(len(l)):
     del(l[i])
