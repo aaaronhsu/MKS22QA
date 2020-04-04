@@ -1,5 +1,9 @@
+def maxSubArray(nums):
+        ans = sum(nums)
+        for i in range(len(nums)):
+            for a in range(i, len(nums) + 1):
+                if sum(nums[i:a]) > ans:
+                    ans = sum(nums[i:a])
+        return ans
 
-l = [1, 2, 3, 4]
-
-for i in range(len(l)):
-    del(l[i])
+print(maxSubArray([-1]))
