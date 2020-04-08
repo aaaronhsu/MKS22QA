@@ -1,5 +1,6 @@
 from turtle import *
-# classwork
+from tkinter import *
+# classwork/homework
 def koch(t, o, s):
     if o == 0:
         t.fd(s)
@@ -17,5 +18,7 @@ def triangle(t, o, s):
         t.rt(120)
         koch(t, o, s)
 
-
-triangle(Turtle(), 3, 100)
+tk = Tk()
+btn = Button(tk, text = "create snowflake", command = lambda:triangle(Turtle(), 3, 100))
+btn.pack()
+mainloop()
