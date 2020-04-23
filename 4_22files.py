@@ -34,3 +34,15 @@ def countLines(fileName):
     l = f.readlines()
     f.close()
     return len(l)
+
+
+def test(fileName):
+    f = open('test.txt', 'r')
+    count = 0
+    for i in f:
+        if '\n' in i:
+            count += 1
+
+    return count
+
+print(test('text.txt'))
