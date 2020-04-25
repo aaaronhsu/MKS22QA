@@ -1,15 +1,19 @@
 d = {'Mount Everest': 8848, 
-        'K2': 8611,
-        'Kangchenjunga': 8586,
-        'Lhotse': 8516,
-        'Makalu': 8485}
+    'K2': 8611,
+    'Kangchenjunga': 8586,
+    'Lhotse': 8516,
+    'Makalu': 8485}
 
 def part1():
+    count = 1
     for i in d:
-        print(i)
+        print("Mountain " + str(count) + ' is ' + i)
+        count += 1
 
+    count = 1
     for i in d:
-        print(d[i])
+        print('Mountain ' + str(count) + ' is ' + str(d[i]) + ' meters tall')
+        count += 1
 
     for i,k in d.items():
         print(i + ' is ' + str(k) + ' meters tall.')
@@ -38,3 +42,5 @@ def part3():
 
     for i,k in d2.items():
         print(i + ' is ' + str(k[0]) + ' meters tall, or ' + str(k[1]) + ' feet.')
+    
+part1()
