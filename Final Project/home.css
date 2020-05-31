@@ -1,0 +1,42 @@
+.flexbox-container {
+	display: flex;
+}
+
+.flexbox-item {
+	margin: 10px;
+	/* border: 2px solid #BE5504; */
+	background-color: #FAFAFA;
+}
+
+.flexbox-text {
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+	padding-top: 3%;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-bottom: 4.5%;
+	background-color: white;
+}
+
+.flexbox-img {
+	padding-top: 3%;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-bottom: 4.5%;
+	width: 70%;
+	margin-left: 15%;
+	background-color: #FAFAFA;
+}
+
+.chickenNugget {
+	width: 50px;
+}
+
+h1 {
+	font-size: 42px;
+}
+
+i, p {
+	background-color: white;
+}
