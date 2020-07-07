@@ -1,0 +1,51 @@
+.information {
+	margin: 30px;
+}
+
+.green {
+	color: rgb(21, 173, 21);
+}
+
+.red {
+	color: red;
+}
+
+.results {
+	width: 80%;
+	height: 300px;
+	text-align: center;
+	border: 1px solid rgb(240, 94, 35);
+}
+
+table {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+form {
+	
+	width: 100%;
+}
+
+h2, h3 {
+	text-align: center;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+h3 {
+	margin-top: 5px;
+}
+
+.box {
+	margin-top: 250px;
+	position: relative;
+}
+
+.bottomBorder {
+	border-bottom: 1 px rgb(240, 94, 35);
+}
+
+.vsc-initialized {
+	margin-bottom: 0px;
+}

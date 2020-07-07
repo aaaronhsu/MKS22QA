@@ -1,9 +1,11 @@
 <!DOCTYPE html> 
  <html> 
 	 <head> 
+		 <link rel="icon" type="image/png" href="images/chickenNugget.png">
 		 <title>Chicken Nugget Crisis</title> 
-		 <link rel="stylesheet" type="text/css" href="global.css">
-		 <link rel="stylesheet" type="text/css" href="save.css">
+		 <meta charset="UTF-8">
+		 <link rel="stylesheet" type="text/css" href="css/global.css">
+		 <link rel="stylesheet" type="text/css" href="css/save.css">
 		 <style>
 			 
 		 </style>
@@ -11,12 +13,54 @@
 
 	 <body>
 		<div class="nav">
+			<a href="sources.html">Sources</a>
 			<a href="news.html">News</a>
-			<a href="home.html">Home</a>
+			<a href="index.html">Home</a>
 			 
 			<a class="active" href="save.html">Save the World</a>
 
 			<p class="header">The Chicken Nugget</p>
-		</div>	
+		</div>
+		
+		<div class="story">
+			<h1 class="topHeading">Save the World</h1>
+			<h3>Over the past couple years, life has not treated you well. 
+				You were kicked out of your mom’s basement because you stole 
+				your mom’s credit card and spent all of her money on Fortnite, 
+				with dreams of being an <span class="red">epic gamer</span> one day.
+			</h3>
+
+			<h3>You pace around the streets, your new home, thinking of ways to 
+				save yourself. With the chicken pandemic sweeping the world, 
+				<span class="highlight">everyone is craving chicken nuggets</span>. You decide to open up your 
+				own restaurant to serve this growing demand for chicken nuggets 
+				with your very own nugget recipe. Save both yourself and the world 
+				right?
+			</h3>
+
+			<h3>You open your restaurant and realize that you don’t know how to 
+				make any type of nugget. You consult the internet and they give 
+				you a couple recommendations. It’s your job to <span class="highlight">
+				craft the perfect nugget recipe</span> to satisfy the growing demand 
+				for nuggets.
+			</h3>
+		</div>
+
+		<form class="box" action="python/choice.py" method="post">
+			<h1>Start Your Adventure</h1>
+			<input type="text" name="name" placeholder="Restaurant Name">
+			<input type="hidden" id="day" name="day" value="1">
+			<input type="hidden" id="money" name="money" value="20">
+			<input type="submit" name="submit" value="Start">
+		</form>
+
+		<div class="footer down">
+			<h2 class="top footer">Contact Us</h2>
+			<p class="footer">&copy;The Chicken Nugget</p>
+			<p class="footer"> <a href="mailto: ahsu20@stuy.edu"><span class="contactEmail">ahsu20@stuy.edu</span></a></p>
+			<a href="index.html">Back to Home</a>
+			<p class="footer">Last updated October 23rd, 2020</p>
+			<p class="bottom footer"><i>Save the Chickens</i></p>
+		</div>
 	 </body> 
  </html>

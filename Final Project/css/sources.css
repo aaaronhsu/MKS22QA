@@ -1,0 +1,21 @@
+h1 {
+	padding: 10px;
+}
+
+h2 {
+	text-align: center;
+	color: rgb(255, 153, 0);
+}
+
+img {
+	transition: 0.4s;
+}
+
+img:hover {
+	transform: translate(-7px, -7px);
+	transition: 0.4s;
+}
+
+.topHeading {
+	text-decoration: underline;
+}

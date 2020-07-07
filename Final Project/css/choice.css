@@ -1,0 +1,52 @@
+h1 {
+	margin-top: 15px;
+}
+
+table {
+	text-align: center;
+	border-collapse: separate;
+	border-spacing: 50px 0;
+	border: 1px solid black;
+}
+
+td {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.green {
+	color: rgb(21, 173, 21);
+}
+
+.center {
+	margin-left: 330px;
+}
+
+label {
+	font-size: 20px;
+}
+
+.innerCenter {
+	text-align: center;
+}
+.larger {
+	margin-top: 18px;
+	width: 400px;
+	height: 60px;
+	font-size: 30px;
+	color: orange;
+	background-color: #222222;
+	transition: 0.5s;
+}
+
+.larger:hover {
+	width: 500px;
+	height: 70px;
+	transition: 0.5s;
+	color: white;
+}
